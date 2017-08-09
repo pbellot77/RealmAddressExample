@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11D259AFD80551DF1472D8F8 /* Pods_RealmAddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B132A6E6CABFE3A461A6B4 /* Pods_RealmAddressBook.framework */; };
+		BA091D191F3B953100D1E46C /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA091D181F3B953100D1E46C /* Contact.swift */; };
 		BA0B0A431F3B775400C8FC7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0B0A421F3B775400C8FC7C /* AppDelegate.swift */; };
 		BA0B0A451F3B775400C8FC7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0B0A441F3B775400C8FC7C /* ViewController.swift */; };
 		BA0B0A481F3B775400C8FC7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA0B0A461F3B775400C8FC7C /* Main.storyboard */; };
 		BA0B0A4A1F3B775400C8FC7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA0B0A491F3B775400C8FC7C /* Assets.xcassets */; };
 		BA0B0A4D1F3B775400C8FC7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA0B0A4B1F3B775400C8FC7C /* LaunchScreen.storyboard */; };
+		BA0B0A551F3B8DCE00C8FC7C /* AddContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0B0A541F3B8DCE00C8FC7C /* AddContactViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F7A92171D3BBB233A508A2A /* Pods-RealmAddressBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmAddressBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-RealmAddressBook/Pods-RealmAddressBook.release.xcconfig"; sourceTree = "<group>"; };
+		44B132A6E6CABFE3A461A6B4 /* Pods_RealmAddressBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmAddressBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9AA89B9D7F58E9F8E93D034 /* Pods-RealmAddressBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmAddressBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RealmAddressBook/Pods-RealmAddressBook.debug.xcconfig"; sourceTree = "<group>"; };
+		BA091D181F3B953100D1E46C /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		BA0B0A3F1F3B775400C8FC7C /* RealmAddressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmAddressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA0B0A421F3B775400C8FC7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA0B0A441F3B775400C8FC7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,7 @@
 		BA0B0A491F3B775400C8FC7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA0B0A4C1F3B775400C8FC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA0B0A4E1F3B775400C8FC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA0B0A541F3B8DCE00C8FC7C /* AddContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11D259AFD80551DF1472D8F8 /* Pods_RealmAddressBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		014EAF2F7D7DED7C24B4F4F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9AA89B9D7F58E9F8E93D034 /* Pods-RealmAddressBook.debug.xcconfig */,
+				3F7A92171D3BBB233A508A2A /* Pods-RealmAddressBook.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A78716ECEE13F9FB440CFD3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44B132A6E6CABFE3A461A6B4 /* Pods_RealmAddressBook.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA0B0A361F3B775400C8FC7C = {
 			isa = PBXGroup;
 			children = (
 				BA0B0A411F3B775400C8FC7C /* RealmAddressBook */,
 				BA0B0A401F3B775400C8FC7C /* Products */,
+				014EAF2F7D7DED7C24B4F4F3 /* Pods */,
+				A78716ECEE13F9FB440CFD3C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,6 +85,8 @@
 				BA0B0A421F3B775400C8FC7C /* AppDelegate.swift */,
 				BA0B0A441F3B775400C8FC7C /* ViewController.swift */,
 				BA0B0A461F3B775400C8FC7C /* Main.storyboard */,
+				BA0B0A541F3B8DCE00C8FC7C /* AddContactViewController.swift */,
+				BA091D181F3B953100D1E46C /* Contact.swift */,
 				BA0B0A491F3B775400C8FC7C /* Assets.xcassets */,
 				BA0B0A4B1F3B775400C8FC7C /* LaunchScreen.storyboard */,
 				BA0B0A4E1F3B775400C8FC7C /* Info.plist */,
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA0B0A511F3B775400C8FC7C /* Build configuration list for PBXNativeTarget "RealmAddressBook" */;
 			buildPhases = (
+				AA068A87FB5019517D0841AC /* [CP] Check Pods Manifest.lock */,
 				BA0B0A3B1F3B775400C8FC7C /* Sources */,
 				BA0B0A3C1F3B775400C8FC7C /* Frameworks */,
 				BA0B0A3D1F3B775400C8FC7C /* Resources */,
+				DB95B613F6171BFDCD078418 /* [CP] Embed Pods Frameworks */,
+				D48E60B5030FC99CAC9C1D07 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,11 +165,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AA068A87FB5019517D0841AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D48E60B5030FC99CAC9C1D07 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmAddressBook/Pods-RealmAddressBook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB95B613F6171BFDCD078418 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RealmAddressBook/Pods-RealmAddressBook-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BA0B0A3B1F3B775400C8FC7C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA091D191F3B953100D1E46C /* Contact.swift in Sources */,
+				BA0B0A551F3B8DCE00C8FC7C /* AddContactViewController.swift in Sources */,
 				BA0B0A451F3B775400C8FC7C /* ViewController.swift in Sources */,
 				BA0B0A431F3B775400C8FC7C /* AppDelegate.swift in Sources */,
 			);
@@ -261,6 +344,7 @@
 		};
 		BA0B0A521F3B775400C8FC7C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9AA89B9D7F58E9F8E93D034 /* Pods-RealmAddressBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BR4H78C3XC;
@@ -274,6 +358,7 @@
 		};
 		BA0B0A531F3B775400C8FC7C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F7A92171D3BBB233A508A2A /* Pods-RealmAddressBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BR4H78C3XC;
@@ -304,6 +389,7 @@
 				BA0B0A531F3B775400C8FC7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
